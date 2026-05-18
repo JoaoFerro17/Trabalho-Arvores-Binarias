@@ -3,6 +3,7 @@ public class No {
     No esquerda;
     No direita;
 
+
     public No(Integer conteudo) {
         this.conteudo = conteudo;
         this.esquerda = null;

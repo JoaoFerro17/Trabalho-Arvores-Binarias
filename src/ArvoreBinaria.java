@@ -190,7 +190,6 @@ public class ArvoreBinaria {
         }
         return false;
     }
-
     private void posOrdem(No no) {
         if(no == null) {
             return;
@@ -199,7 +198,6 @@ public class ArvoreBinaria {
         posOrdem(no.getDireita());
         System.out.println(no.getConteudo());
     }
-
     private void preOrdem(No no) {
         if(no == null) {
             return;
@@ -208,7 +206,6 @@ public class ArvoreBinaria {
         preOrdem(no.getEsquerda());
         preOrdem(no.getDireita());
     }
-
     private void emOrdem(No no) {
         if(no == null) {
             return;

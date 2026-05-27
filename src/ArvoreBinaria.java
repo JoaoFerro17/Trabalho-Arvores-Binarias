@@ -132,18 +132,17 @@ public class ArvoreBinaria {
     }
 
     private void removerPaiDeDois(No atual){
-        No paiSucessor = atual;
+        No paiDoSucessor = atual;
         No sucessor  = atual.getDireita();
         while (sucessor.getEsquerda() != null){
-            paiSucessor  =  sucessor;
+            paiDoSucessor  =  sucessor;
             sucessor = sucessor.getEsquerda();
         }
         atual.setConteudo(sucessor.getConteudo());
-
-        if (paiSucessor.getEsquerda() == sucessor) {
-            paiSucessor.setEsquerda(sucessor.getDireita());
+        if (paiDoSucessor.getEsquerda() == sucessor) {
+            paiDoSucessor.setEsquerda(sucessor.getDireita());
         } else {
-            paiSucessor.setDireita(sucessor.getDireita());
+            paiDoSucessor.setDireita(sucessor.getDireita());
         }
     }
 
